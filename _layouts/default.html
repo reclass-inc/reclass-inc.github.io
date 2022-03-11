@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 
-{% seo %}
+    {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,16 +11,25 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
+    <style>
+      .project-name {
+        text-align: center;
+        padding: 20px 0 30px 0;
+      }
+
+      .body-text {
+        max-width: 50vw;
+        margin-left: 25vw;
+        
+      }
+    </style>
   </head>
   <body>
     <header class="page-header" role="banner">
       <h1 class="project-name">ReClass</h1>
     </header>
     <main id="content" class="main-content" role="main">
-          {{ content }}
-          <footer class="site-footer">
-            &copy; 2022 ReClass, Inc.
-          </footer>
+      <p class="body-text">ReClass Inc. is building a new education platform that will better align the incentives between learners, educators, and funders. Central to the company vision is a virtualized classroom experience that will enable the evolution of cohort-based learning.</p>
     </main>
   </body>
 </html>
